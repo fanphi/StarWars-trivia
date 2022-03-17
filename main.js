@@ -37,7 +37,7 @@ let fetchData = async (url) => {
                   myDiv.appendChild(infoPara1);
                 }
                 else{
-                  infoPara1.innerHTML = `My gender is ${this.gender}.`;
+                  infoPara1.innerHTML = `My gender is ${this.gender} and ${myCharacter2.name}'s gender is ${person2}. We have different genders.`;
                   myDiv.appendChild(infoPara1);
                 }
               }
@@ -50,7 +50,7 @@ let fetchData = async (url) => {
                   myDiv2.appendChild(infoPara2);
                 }
                 else{
-                  infoPara2.innerHTML = `My gender is ${this.gender}.`;
+                  infoPara2.innerHTML = `My gender is ${this.gender} and ${myCharacter1.name}'s gender is ${person1}. We have different genders.`;
                   myDiv2.appendChild(infoPara2);
                 }
               }
@@ -151,7 +151,7 @@ let fetchData = async (url) => {
                   myDiv.appendChild(infoPara1);
                 }
                 else{
-                  infoPara1.innerHTML = `My hair color is ${this.hairColor}.`;
+                  infoPara1.innerHTML = `My hair color is ${this.hairColor} and ${myCharacter2.name}'s hair color is ${person2}. We do not have the same hair color.`;
                   // console.log("test test")
                   myDiv.appendChild(infoPara1);
                 }
@@ -166,7 +166,7 @@ let fetchData = async (url) => {
                   myDiv2.appendChild(infoPara2);
                 }
                 else{
-                  infoPara2.innerHTML = `My hair color is ${this.hairColor}.`;
+                  infoPara2.innerHTML = `My hair color is ${this.hairColor} and ${myCharacter1.name}'s hair color is ${person1}. We do not have the same hair color.`;
                   // console.log("test test")
                   myDiv2.appendChild(infoPara2);
                 }
@@ -192,24 +192,6 @@ let fetchData = async (url) => {
             let mySection2 = document.createElement("section");
             mySection2.innerHTML = `<h3>${characters2.name}</h3><img src="${myCharacter2.pictureUrl}" alt="character"> <section id="info-section2"><p>Ask me about about me and ${characters.name}'s: <br> <br><button id="mass-btn2">Weight</button><br><button id="height-btn2">Height</button><br><button id="hair-btn2">Hair Color</button><br><button id="gender-btn2">Gender</button> </p> </section>`;
             myDiv2.innerHTML=mySection2.innerHTML;
-
-
-            // let infoSection = document.querySelector("#info-section");
-            // infoSection.style.display = "none";
-            // let infoBtn = document.querySelector("#info-btn")
-            
-            // infoBtn.addEventListener("click",()=>{
-            //   infoSection.style.display = (mySection1.toggled ^=1) ? "block" : "none";
-            // },false);
-              
-            //   let infoSection2 = document.querySelector("#info-section2");
-            //   infoSection2.style.display = "none";
-            //   let infoBtn2 = document.querySelector("#info-btn2")
-
-            //   infoBtn2.addEventListener("click",()=>{
-                
-            //     infoSection2.style.display = (mySection2.toggled ^=1) ? "block" : "none";
-            //   }, false);
 
              let genderBtn1 = document.querySelector("#gender-btn1");
              

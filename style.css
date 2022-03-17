@@ -1,8 +1,3 @@
-/* body{
-    color: #f9d71c;
-    background: black;
-} */
-
 h1{
     text-align: center;
 }
@@ -53,5 +48,5 @@ div{
 img{
     height: 250px;
     border-radius: 10px;
-    /* width: 200px; */
+    
 }

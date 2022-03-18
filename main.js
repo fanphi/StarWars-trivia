@@ -185,12 +185,12 @@ let fetchData = async (url) => {
 
             let mySection1 = document.createElement("section");
             mySection1.innerHTML = `<h3> ${myCharacter1.name} </h3> <img src="${myCharacter1.pictureUrl}" alt="character">
-            <section id="info-section"><p>Ask me about me and ${myCharacter2.name}'s: <br> <br> <button id="mass-btn1">Weight</button><br>
+            <section id="info-section"><p>Ask me about my and ${myCharacter2.name}'s: <br> <br> <button id="mass-btn1">Weight</button><br>
            <button id="height-btn1">Height</button><br> <button id="hair-btn1">Hair Color</button><br><button id="gender-btn1">Gender</button></section>`;
             myDiv.innerHTML=mySection1.innerHTML;
 
             let mySection2 = document.createElement("section");
-            mySection2.innerHTML = `<h3>${characters2.name}</h3><img src="${myCharacter2.pictureUrl}" alt="character"> <section id="info-section2"><p>Ask me about about me and ${characters.name}'s: <br> <br><button id="mass-btn2">Weight</button><br><button id="height-btn2">Height</button><br><button id="hair-btn2">Hair Color</button><br><button id="gender-btn2">Gender</button> </p> </section>`;
+            mySection2.innerHTML = `<h3>${characters2.name}</h3><img src="${myCharacter2.pictureUrl}" alt="character"> <section id="info-section2"><p>Ask me about about my and ${characters.name}'s: <br> <br><button id="mass-btn2">Weight</button><br><button id="height-btn2">Height</button><br><button id="hair-btn2">Hair Color</button><br><button id="gender-btn2">Gender</button> </p> </section>`;
             myDiv2.innerHTML=mySection2.innerHTML;
 
              let genderBtn1 = document.querySelector("#gender-btn1");
